@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sample CSS</title>
+	<style>
+		h3{
+			background-color: pink;
+			color: green;
+			padding: 20px;
+			margin-right: 200px;
+		}
+		h2{
+			background-color: darkred;
+			color: pink;
+		}
+		p{
+			font-size: x-large;
+			color: darkred;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/sample.css'%}">
+</head>
+<body>
+	<h1>For Sample css example</h1>
+	<h2 style="background-color: skyblue;color: red;padding: 10px;margin-right: 200px;margin-left: 200px;font-size: large;">Inline CSS</h2>
+	<h3>Internal CSS</h3>
+	<p>Paragraph</p>
+	<h4>External css</h4>
+	<h5>Sample for External</h5>
+</body>
+</html>
