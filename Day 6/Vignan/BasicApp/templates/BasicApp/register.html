@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Register</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+  	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+  	<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="card mt-5 mx-auto col-md-6">
+			<div class="card-body">
+				<h2 class="bg-dark text-white text-center p-2 border rounded">Register Here....</h2>
+				<form method="POST">
+					{% csrf_token %}
+					<input type="text" name="uname" placeholder="Enter user name" class="form-control my-2">
+					<input type="email" name="email" placeholder="Enter your mail-id" class="form-control my-2">
+					<input type="password" name="pswd" placeholder="Enter password" class="form-control my-2">
+					<input type="password" name="cpswd" placeholder="Confirm your password" class="form-control my-2">
+					<label class="radio-inline">
+						<input type="radio" name="optradio" value="female"> Female
+					</label>
+					<label class="radio-inline mb-2">
+						<input type="radio" name="optradio" value="male"> Male
+					</label>
+					<input type="date" name="dob" value="dob" class="form-control bg-secondary text-white mb-3">
+					<label class="checkbox-inline mb-2">
+						<input type="checkbox" name="lan" value="telugu"> Telugu
+					</label>
+					<label class="checkbox-inline mb-2">
+						<input type="checkbox" name="lan" value="hindi"> Hindi
+					</label>
+					<label class="checkbox-inline mb-2">
+						<input type="checkbox" name="lan" value="english"> English
+					</label>
+					<div class="form-group">
+						<label for="sel1"><b>Select Course: </b></label>
+						<select class="form-control mb-2" id="sel1" name="course">
+							<option value="none">None</option>
+							<option value="python">Python</option>
+							<option value="ml">ML</option>
+							<option value="data science">Data Science</option>
+							<option value="django">Django</option>
+							<option value="react">React</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="range">Range: </label>
+						<input type="range" name="range" class="form-control-range mb-2" min = '1' max="10" value="5">
+					</div>
+					<div class="form-group">
+						<label>File Uplaod: </label>
+						<input type="file" name="file" class="form-control-file border mt-2" value="no file choosen">
+					</div>
+					<div class="form-group">
+						<label for="comment">Comment: </label>
+						<textarea class="form-group mb-2" rows="3" id="comment" name="txt"></textarea>
+					</div>
+					<input type="submit" name="submit" value="Register" class="form-control btn btn-success btn-block btn-md">
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

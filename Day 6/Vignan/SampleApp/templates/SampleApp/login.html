@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<style>
+		.container{
+			padding: 50px;
+			margin: auto;
+			width: 380px;
+			border-radius: 15px;
+			background: lightblue;
+		}
+		input[type='text']{
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+		}
+		input[type='password']{
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+		}
+		button{
+			background-color: pink;
+			color: red;
+			padding: 14px 20px;
+			margin: 8px;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<h2 style="background-color:darkcyan;margin-left: 100px;margin-right: 120px;padding: 10px;border-radius: 25px;text-align: center;font-size: 30px;">Login</h2>
+		<div class="container">
+			<label>Username: </label>
+			<input type="text" name="uname" required>
+			<label>Password: </label>
+			<input type="password" name="pswd" required>
+			<button type="submit">Login</button>
+		</div>
+	</form>
+</body>
+</html>
