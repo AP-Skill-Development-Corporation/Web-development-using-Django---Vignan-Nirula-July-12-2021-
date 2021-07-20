@@ -1,4 +1,21 @@
-# Meeting ID is same
+apssdc django's Meeting
+
+
+Please join my meeting from your computer, tablet or smartphone.
+
+https://www.gotomeet.me/djangonirula
+
+You can also dial in using your phone.
+(For supported devices, tap a one-touch number below to join instantly.)
+
+United States: +1 (872) 240-3412
+- One-touch: tel:+18722403412,,277440533#
+
+Access Code: 277-440-533
+
+
+New to GoToMeeting? Get the app now and be ready when your first meeting starts: https://global.gotomeeting.com/install/277440533
+
 # Web-development-using-Django---Vignan-Nirula-July-12-2021
 
 This repo contains the content that was delivered in the workshop
