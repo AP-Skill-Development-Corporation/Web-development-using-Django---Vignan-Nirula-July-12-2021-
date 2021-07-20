@@ -1,0 +1,36 @@
+Website : collection of related pages  (static)
+
+
+Web Application : Dynamic
+
+OOP : Object Oriented Programming
+
+Class : Blue Print. Which containes properties and methods
+Object : Instance of class
+function :  Block of reusable code
+method : A function which is defined inside a class.
+constructor : It is a method used to initialize the object
+
+Inheritence: Using the properties of one class in another class
+Base class/ parent class
+Derived class/ child class
+
+Types of Inheritence:
+------------------------------------
+1) Single Level Inheritence
+2) Mulilevel Inheritence
+3) Multiple Inheritence
+4) Hierarchial Inheritence
+4)Hybrid Inheritence
+
+
+
+
+
+
+
+
+
+
+
+	

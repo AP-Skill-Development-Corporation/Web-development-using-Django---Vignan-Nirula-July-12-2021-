@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Books</title>
+	<style type="text/css">
+		.add-book{
+			color:white;
+			font-size:40px;
+			margin-top:30px;
+			background-color:#227D44;
+			border-radius: 10px;
+			border-color:pink;
+			border-width:10px;
+			border-style: double;
+		}
+	</style>
+</head>
+<body>
+	<table border=1>
+		<tr>
+			<th>Book Number</th>
+			<th>Book Name</th>
+			<th>Author</th>
+			<th>Department</th>
+			<th>Published Date</th>
+		</tr>
+		{% for i in data %}
+		<tr>
+			<td>{{ i.book_no }}</td>
+			<td>{{ i.book_name }}</td>
+			<td>{{ i.author }}</td>
+			<td>{{ i.department }}</td>
+			<td>{{ i.published_in }}</td>
+			<td><a href = "{% url 'update' i.book_no %}"><button>Update</button></a></td>
+			<td><a href = "{% url 'delete' i.book_no %}"><button>Delete</button></a></td>
+		</tr>
+		{% endfor %}
+	</table>
+	<a  href = "{% url 'add_book' %}"><button class="add-book">Add a New Book</button></a>
+</body>
+</html>
