@@ -22,3 +22,6 @@ This repo contains the content that was delivered in the workshop
 ### Day 6 (17-07-2021)
 -[Recorded Session Link](https://transcripts.gotomeeting.com/#/s/8ab34013e4c4a9c98e2f9d06e2e12c04143921510e57ffad675254c319ef44f7)
 ---
+### Day 7 (19-07-2021)
+-[Recorded Session Link](https://transcripts.gotomeeting.com/#/s/aae25f1427bbdc8150e00b3b48d2aa9b85585a621c7325c596616a0f0ac0f4e5)
+---
