@@ -2,6 +2,8 @@
 
 This repo contains the content that was delivered in the workshop
 ---
+[DB Browser Software](https://sqlitebrowser.org/dl/)
+---
 ### Day 1 (12-07-2021)
 -[Recorded Session Link](https://transcripts.gotomeeting.com/#/s/9cef781ec92672dd75b5cb938015e71b05faa3378899b3c91fce8090c16e891e)
 ---
