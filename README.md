@@ -43,3 +43,17 @@ This repo contains the content that was delivered in the workshop
 ### Day 7 (19-07-2021)
 -[Recorded Session Link](https://transcripts.gotomeeting.com/#/s/aae25f1427bbdc8150e00b3b48d2aa9b85585a621c7325c596616a0f0ac0f4e5)
 ---
+### Day 8 (20-07-2021)
+- Database Connectivity with MySql
+  - Xampp server
+  - pip install mysqlclient
+  - settings:
+  ```python
+    'ENGINE':"django.backends.db.mysql'
+    'NAME:'dbname'
+    'USER':'root',
+    'HOST':'localhost',
+    'PASSWORD':'',
+    'PORT':'3306'
+  ```
+- Mail Sending using Django
