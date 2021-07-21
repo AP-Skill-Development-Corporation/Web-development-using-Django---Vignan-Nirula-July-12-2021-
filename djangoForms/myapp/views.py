@@ -4,7 +4,12 @@ from django.http import HttpResponse
 from .models import library
 from django.core.mail import send_mail
 from djangoForms import settings
+
+from django.contrib import messages
 # Create your views here.
+
+def home(request):
+	return render(request,"home.html")
 
 
 def add_book(request):
@@ -13,6 +18,8 @@ def add_book(request):
 		if form.is_valid():
 			form.save()
 			# return HttpResponse("succesful")
+			book_name = form.cleaned_data['book_name']
+			messages.success(request,book_name + " Book is added successfully")
 			return redirect('books')
 		else:
 			return HttpResponse("Invalid Data")
@@ -31,6 +38,8 @@ def update(request,book_no):
 		form = LibraryForm(request.POST,instance=data)
 		if form.is_valid():
 			form.save()
+			book_name = form.cleaned_data['book_name']
+			messages.info(request,book_name + " Book details updated")
 			return redirect('books')
 		else:
 			return HttpResponse("Invalid data")
@@ -38,7 +47,9 @@ def update(request,book_no):
 
 def delete(request,book_no):
 	data = library.objects.get(book_no = book_no)
+	messages.warning(request,data.book_name + " Book is deleted")
 	data.delete()
+
 	return redirect("books")
 
 

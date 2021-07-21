@@ -1,20 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Contact Us</title>
-</head>
-<body align=center>
+
+	
+{% extends 'index.html' %}
+
+{% block title %}
+	Contact us
+{% endblock %}
+
+{% block content %}
+<div class="container">
 	<h2>Contact Form</h2>
 	<form method='post'>
 		{% csrf_token %}
 		<label>Email</label>
-		<input type="email" name="mail"><br><br>
+		<input class="form-control" type="email" name="mail"><br><br>
 		<label>Query</label>
-		<textarea rows=5 cols=50 name="query">
+		<textarea class="form-control" rows=5 cols=50 name="query">
 			
 		</textarea><br><br>
 
-		<button>Submit</button>
+		<button class="btn btn-success">Submit</button>
 	</form>
-</body>
-</html>
+</div>
+	
+	
+{% endblock %}
