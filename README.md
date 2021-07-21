@@ -50,8 +50,8 @@ This repo contains the content that was delivered in the workshop
   - pip install mysqlclient
   - settings:
   ```python
-    'ENGINE':"django.backends.db.mysql'
-    'NAME:'dbname'
+    'ENGINE':'django.backends.db.mysql'
+    'NAME':'dbname'
     'USER':'root',
     'HOST':'localhost',
     'PASSWORD':'',
