@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+
+{% block body %}
+
+<div class="container">
+		<div class="row">
+			{% for i in data %}
+				
+						<div class="col-4">
+							<div class="card text-center shadow-lg">
+								<div class="card-body">
+									<img src = "{{i.image.url}}" />
+									<div class="card-header">
+									{{ i.name }}
+									</div>
+								</div>
+							</div>
+						</div>
+			{% endfor %}
+		</div>
+	</div>
+{% endblock %}
