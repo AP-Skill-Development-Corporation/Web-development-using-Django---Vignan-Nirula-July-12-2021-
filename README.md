@@ -58,3 +58,10 @@ This repo contains the content that was delivered in the workshop
     'PORT':'3306'
   ```
 - Mail Sending using Django
+---
+### Day 9 (21-07-2021)
+- [Recorded Session Link](https://transcripts.gotomeeting.com/#/s/cf3dc6fc0ac9762a8c5782979da591ad40c8dcadcb01bc0fad20ae17ce83c5fd)
+- Template Inheritence (extends, include)
+- Template Blocks
+- Messages Module
+---
