@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+
+{% block body %}
+<div class="container mt-5">
+	<h1 class="bg-primary text-white rounded p-3">Registration Form</h1>
+	<!-- <br> -->
+	<form class="mt-5" method="post">
+		{% csrf_token %}
+		{{form.as_p}}
+		<button class="btn btn-success">Register</button>
+	</form>
+</div>
+
+	
+{% endblock %}
