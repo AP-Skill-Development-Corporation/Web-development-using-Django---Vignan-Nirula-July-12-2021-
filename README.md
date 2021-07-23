@@ -65,3 +65,6 @@ This repo contains the content that was delivered in the workshop
 - Template Blocks
 - Messages Module
 ---
+### Day 10 (22-07-2021)
+- [Recorded Session Link](https://transcripts.gotomeeting.com/#/s/3ece6cb2f8af26ebf5da9343b7a3dcf15aeea627aae5c9242845ae55ede2bb01)
+- File Uploading
